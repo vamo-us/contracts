@@ -1,34 +1,48 @@
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Node.js Package
+name: Publish to NPMJS and GPR
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  publish-to-npm-and-gpr:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      
+      # Checkout the repo
+      - uses: actions/checkout@main
+        
+      # Update package version and set up git
+      - uses: actions/setup-node@main
+      - name: Update package version and setup git
+        run: |
+          git config user.name "Actions User"
+          git config user.email noreply@github.com
+          npm version 1.0.$(date +%s)
 
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      # Publish to NPMJS
+      - uses: actions/setup-node@main
         with:
           node-version: 16
-          registry-url: https://registry.npmjs.org/
-          scope: vamo-us
-      - run: npm ci
-      - run: npm publish
+          registry-url: 'https://registry.npmjs.org/'
+      - name: Publish to NPMJS
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+          npm config set scope "<@vamous>"
+          npm config list
+          npm publish --access public 
         env:
+          CI: true
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+      # Publish to GitHub Package Registry
+      - uses: actions/setup-node@main
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+          scope: '<@vamous>'
+      - name: Publish to GitHub Package Registry
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
