@@ -1,12 +1,18 @@
 {
   "name": "@vamous/interfaces",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "private": true,
   "scripts": {
-    "build": "tsup ./src"
+    "build": "tsup ./src",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
+    "semantic-release": "^21.0.7",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vamo-us/interfaces.git"
   }
 }
