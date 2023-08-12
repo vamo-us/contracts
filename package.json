@@ -2,6 +2,11 @@
   "name": "@vamous/interfaces",
   "version": "0.0.0-development",
   "private": true,
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "scripts": {
     "build": "tsup ./src",
     "semantic-release": "semantic-release"
@@ -14,5 +19,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vamo-us/interfaces.git"
-  }
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }
