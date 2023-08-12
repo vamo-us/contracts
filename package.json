@@ -1,12 +1,26 @@
 {
   "name": "@vamous/interfaces",
   "version": "0.0.0-development",
-  "private": true,
+  "author": "Vamous",
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vamo-us/interfaces.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "release": {
     "branches": [
       "main"
     ]
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "build": "tsup ./src",
     "semantic-release": "semantic-release"
@@ -15,10 +29,6 @@
     "semantic-release": "^21.0.7",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vamo-us/interfaces.git"
   },
   "plugins": [
     "@semantic-release/commit-analyzer",
