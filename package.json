@@ -2,14 +2,8 @@
   "name": "@vamous/interfaces",
   "version": "1.0.0",
   "private": true,
-  "tsup": {
-    "entry": ["src/index.ts"],
-    "splitting": false,
-    "sourcemap": true,
-    "clean": true
-  },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup ./src"
   },
   "devDependencies": {
     "tsup": "^7.2.0",
