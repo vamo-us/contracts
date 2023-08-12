@@ -10,7 +10,7 @@
     "url": "https://github.com/vamo-us/interfaces.git"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "release": {
     "branches": [
