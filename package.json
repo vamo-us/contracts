@@ -1,6 +1,7 @@
 {
   "name": "@vamous/interfaces",
   "version": "1.0.0",
+  "private": false,
   "author": "Vamous",
   "license": "MIT",
   "typings": "dist/index.d.ts",
@@ -8,9 +9,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vamo-us/interfaces.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "release": {
     "branches": [
@@ -21,12 +19,24 @@
     "dist",
     "src"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "tsup ./src",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
+    "semantic-release": "^21.0.7",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
-  }
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }

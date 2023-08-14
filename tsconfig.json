@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "outDir": "./dist/",
     "composite": false,
     "declaration": true,
     "declarationMap": true,
+    "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
@@ -13,12 +15,13 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
-    "noEmit": true,
+    "noEmit": false,
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
   },
+  "include": ["src"],
   "exclude": ["node_modules"]
 }
