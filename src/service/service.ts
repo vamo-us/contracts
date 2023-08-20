@@ -1,15 +1,18 @@
 import { ProfileDto } from '@/user'
 import { AvailabilityDto, CategoryDto, ReviewDto } from '..'
 
+export type LevelTypes = 'basic' | 'superPro'
+
 export interface ServiceDto {
   active: boolean
   availability: AvailabilityDto
   category: CategoryDto
   description: string
-  level: 'basic' | 'superPro' | 'top10'
+  level: LevelTypes
   portfolio: Array<string>
   profile: ProfileDto
   shortDescription: string
   subCategory: CategoryDto
   reviews: Array<ReviewDto>
+  yearsOfExperience: number
 }
