@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vamo-us/interfaces.git"
+    "url": "https://github.com/vamo-us/contracts.git"
   },
   "release": {
     "branches": [
