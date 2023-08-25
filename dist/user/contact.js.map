@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/user/contact.ts"],"sourcesContent":["export interface ContactDto {\n  email: string\n  phoneNumbers: string[]\n  whatsapp: string\n}\n"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}
