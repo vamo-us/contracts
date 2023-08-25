@@ -1,5 +1,6 @@
-export interface CategoryDto {
+interface CategoryDto {
     id: string;
     name: string;
 }
-//# sourceMappingURL=category.d.ts.map
+
+export { CategoryDto };

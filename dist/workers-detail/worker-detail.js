@@ -13,7 +13,7 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/category.ts
-var category_exports = {};
-module.exports = __toCommonJS(category_exports);
-//# sourceMappingURL=category.js.map
+// src/workers-detail/worker-detail.ts
+var worker_detail_exports = {};
+module.exports = __toCommonJS(worker_detail_exports);
+//# sourceMappingURL=worker-detail.js.map

@@ -1,4 +1,4 @@
-export interface AddressDto {
+interface AddressDto {
     city: string;
     country: string;
     neighborhood: string;
@@ -7,4 +7,5 @@ export interface AddressDto {
     street: string;
     zip: string;
 }
-//# sourceMappingURL=address.d.ts.map
+
+export { AddressDto };

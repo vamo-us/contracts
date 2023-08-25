@@ -1,5 +1,6 @@
-export interface AvailabilityDto {
+interface AvailabilityDto {
     daysOfWeek: string;
     timeRanges: string;
 }
-//# sourceMappingURL=availability.d.ts.map
+
+export { AvailabilityDto };

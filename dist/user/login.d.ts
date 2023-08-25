@@ -1,5 +1,6 @@
-export interface LoginDto {
+interface LoginDto {
     email: string;
     password: string;
 }
-//# sourceMappingURL=login.d.ts.map
+
+export { LoginDto };

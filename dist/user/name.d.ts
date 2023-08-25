@@ -1,5 +1,6 @@
-export interface NameDto {
+interface NameDto {
     firstName: string;
     lastName: string;
 }
-//# sourceMappingURL=name.d.ts.map
+
+export { NameDto };

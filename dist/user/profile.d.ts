@@ -1,14 +1,7 @@
-import { ServiceDto } from '@/service';
-import { AddressDto, ContactDto, LoginDto, NameDto } from '@/user';
-import { ReviewDto } from '..';
-export interface ProfileDto {
-    address: AddressDto;
-    contact: ContactDto;
-    favorites: Array<ProfileDto>;
-    login: LoginDto;
-    name: NameDto;
-    pictureUrl: string;
-    services: Array<ServiceDto>;
-    reviews: Array<ReviewDto>;
-}
-//# sourceMappingURL=profile.d.ts.map
+export { P as ProfileDto } from '../review-c3585109.js';
+import './address.js';
+import './contact.js';
+import './login.js';
+import './name.js';
+import '../service/availability.js';
+import '../category.js';
