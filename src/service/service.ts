@@ -12,7 +12,7 @@ export interface ServiceDto {
   portfolio: Array<string>
   profile: ProfileDto
   shortDescription: string
-  subCategory: CategoryDto
+  subCategories: CategoryDto[]
   reviews: Array<ReviewDto>
   yearsOfExperience: number
 }
