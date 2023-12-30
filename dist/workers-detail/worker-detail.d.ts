@@ -1,7 +1,7 @@
 import { AddressDto } from '../user/address.js';
 import { ContactDto } from '../user/contact.js';
 import { NameDto } from '../user/name.js';
-import { S as ServiceDto } from '../review-c3585109.js';
+import { S as ServiceDto } from '../review-ea85f0fe.js';
 import '../service/availability.js';
 import '../user/login.js';
 import '../category.js';
