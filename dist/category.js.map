@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/category.ts"],"sourcesContent":["export interface CategoryDto {\n  id: string\n  name: string\n}"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}

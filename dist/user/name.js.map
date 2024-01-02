@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/user/name.ts"],"sourcesContent":["export interface NameDto {\n  firstName: string\n  lastName: string\n}\n"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}

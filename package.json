@@ -22,7 +22,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup ./src",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsup ./src",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {

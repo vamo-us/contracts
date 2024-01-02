@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/workers/workers.ts"],"sourcesContent":["import { WorkerDto } from \"./worker\";\n\nexport interface WorkersDto {\n  workers: Array<WorkerDto>\n}\n"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}

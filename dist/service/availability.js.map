@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/service/availability.ts"],"sourcesContent":["export interface AvailabilityDto {\n  daysOfWeek: string\n  timeRanges: string\n}"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}

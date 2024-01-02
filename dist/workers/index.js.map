@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/workers/index.ts"],"sourcesContent":["export * from './worker'\nexport * from './workers'"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}

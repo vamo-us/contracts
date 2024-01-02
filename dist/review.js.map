@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/review.ts"],"sourcesContent":["import { ProfileDto } from \"@/user\"\n\nexport interface ReviewDto {\n  comment?: string\n  rating: number\n  reviewer: ProfileDto\n  worker: ProfileDto\n}"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}

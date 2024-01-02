@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/service/index.ts"],"sourcesContent":["export type * from './availability'\nexport type * from './service'"],"mappings":";;;;;;;;;;;;;;;;AAAA;AAAA;","names":[]}
