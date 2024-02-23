@@ -16,9 +16,9 @@ export interface ServiceDto {
   contact: ContactDto
   description: string
   level: LevelTypes
-  portfolio: Array<string>
+  portfolio: string[]
   shortDescription: string
   subCategories: CategoryDto[]
-  reviews: Array<ReviewDto>
+  reviews: ReviewDto[]
   yearsOfExperience: number
 }

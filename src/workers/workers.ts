@@ -1,5 +1,5 @@
-import { WorkerDto } from "./worker";
+import { WorkerDto } from './worker'
 
 export interface WorkersDto {
-  workers: Array<WorkerDto>
+  workers: WorkerDto[]
 }
