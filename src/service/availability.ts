@@ -1,4 +1,4 @@
 export interface AvailabilityDto {
-  daysOfWeek: string
+  dayOfWeek: string
   timeRanges: string
 }
