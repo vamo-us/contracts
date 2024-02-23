@@ -1,11 +1,19 @@
-import { AvailabilityDto, CategoryDto, ReviewDto } from '..'
+import {
+  AddressDto,
+  AvailabilityDto,
+  CategoryDto,
+  ContactDto,
+  ReviewDto,
+} from '..'
 
 export type LevelTypes = 'new' | 'basic' | 'superPro'
 
 export interface ServiceDto {
   active: boolean
-  availability: AvailabilityDto
+  address: AddressDto
+  availability: AvailabilityDto[]
   category: CategoryDto
+  contact: ContactDto
   description: string
   level: LevelTypes
   portfolio: Array<string>
