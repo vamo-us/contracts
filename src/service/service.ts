@@ -1,7 +1,6 @@
-import { ProfileDto } from '@/user'
 import { AvailabilityDto, CategoryDto, ReviewDto } from '..'
 
-export type LevelTypes = 'basic' | 'superPro'
+export type LevelTypes = 'new' | 'basic' | 'superPro'
 
 export interface ServiceDto {
   active: boolean
@@ -10,7 +9,6 @@ export interface ServiceDto {
   description: string
   level: LevelTypes
   portfolio: Array<string>
-  profile: ProfileDto
   shortDescription: string
   subCategories: CategoryDto[]
   reviews: Array<ReviewDto>

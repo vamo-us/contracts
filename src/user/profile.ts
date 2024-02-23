@@ -1,6 +1,5 @@
 import { ServiceDto } from '@/service'
 import { AddressDto, ContactDto, LoginDto, NameDto } from '@/user'
-import { ReviewDto } from '..'
 
 export interface ProfileDto {
   address: AddressDto
@@ -10,5 +9,4 @@ export interface ProfileDto {
   name: NameDto
   pictureUrl: string
   services: Array<ServiceDto>
-  reviews: Array<ReviewDto>
 }

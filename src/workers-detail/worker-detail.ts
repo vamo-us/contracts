@@ -8,7 +8,7 @@ export interface WorkerDetailDto {
   isTop10: boolean
   name: NameDto
   pictureUrl: string
-  service: Omit<ServiceDto, 'profile' | 'reviews'>
+  service: ServiceDto
   rating: number
   ratingCount: number
 }
