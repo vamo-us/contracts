@@ -11,7 +11,7 @@ export type LevelTypes = 'new' | 'basic' | 'superPro'
 export interface ServiceDto {
   active: boolean
   address: AddressDto
-  availability: AvailabilityDto[]
+  availabilities: AvailabilityDto[]
   category: CategoryDto
   contact: ContactDto
   description: string
