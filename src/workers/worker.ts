@@ -10,6 +10,6 @@ export interface WorkerDto {
   rating: number
   service: Pick<
     ServiceDto,
-    'availability' | 'category' | 'level' | 'subCategories'
+    'availabilities' | 'category' | 'level' | 'subCategories'
   >
 }
